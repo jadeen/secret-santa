@@ -91,8 +91,6 @@ export default class HomePage extends Vue {
   listAreEqual() {
     const [listA, listB] = this.lists;
 
-    console.log(listA, listB);
-
     return (
       listA.people.length !== listB.people.length || listA.people.length === 0
     );
