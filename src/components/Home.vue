@@ -25,7 +25,7 @@
         </div>
       </div>
 
-      <button v-on:click="assigment" :disabled="listAreEqual">START ASSIGNMENT</button>
+      <button v-on:click="assigment" :disabled="listAreEqual()">START ASSIGNMENT</button>
     </div>
   </div>
 </template>
@@ -90,6 +90,8 @@ export default class HomePage extends Vue {
 
   listAreEqual() {
     const [listA, listB] = this.lists;
+
+    console.log(listA, listB);
 
     return (
       listA.people.length !== listB.people.length || listA.people.length === 0
