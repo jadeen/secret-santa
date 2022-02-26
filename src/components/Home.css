@@ -1,0 +1,134 @@
+home {
+  height: inherit;
+}
+
+.content {
+  display: flex;
+  width: 75%;
+  height: inherit;
+  margin: 0 auto;
+}
+
+#app {
+  height: calc(100% - 48px);
+}
+
+.body {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  border: none;
+  background: #0a5692;
+  color: white;
+  height: 36px;
+  padding: 0 24px;
+  border-radius: 3px;
+}
+
+button:enabled {
+  cursor: pointer;
+}
+
+button:disabled {
+  background: lightgray;
+  color: black;
+}
+
+button:hover:enabled {
+  background: #0f71bf;
+}
+
+button:focus {
+  outline: none;
+}
+
+input {
+  border: none;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  padding: 10px 10px;
+  font-size: 14px;
+  line-height: 20px;
+
+  background: inherit;
+  width: calc(100% - 20px);
+}
+
+.line {
+  display: flex;
+  align-items: center;
+}
+
+body {
+  margin: 0;
+  height: calc(100% - 48px);
+}
+
+html {
+  margin: 0;
+  height: 100%;
+}
+
+.separator {
+  border-right: 1px solid lightgray;
+}
+
+body {
+  padding: 24px;
+}
+
+.people {
+  overflow: auto;
+  margin-top: 24px;
+}
+
+h1 {
+  font-family: "Geometos";
+  padding: 48px 0;
+  margin: 0;
+  font-size: 60px;
+  letter-spacing: 10px;
+  text-align: center;
+}
+
+.arrow {
+  margin: 0 1em;
+}
+
+p {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+  padding: 1em;
+  display: flex;
+  flex: 1;
+  font-family: sans-serif;
+}
+
+.list {
+  flex: 1px;
+  margin: 24px 0;
+  padding: 24px;
+}
+
+.list:not(.list:last-child) {
+  border-right: 1px solid lightgray;
+}
+
+input:focus {
+  outline: none;
+}
+
+.remove {
+  cursor: pointer;
+  color: darkred;
+  font-size: 18px !important;
+}
+
+.remove:hover {
+  color: #bb0000;
+}
